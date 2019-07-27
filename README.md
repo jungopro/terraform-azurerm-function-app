@@ -18,17 +18,11 @@ This module will create the following objects:
 
 Each resource have it's own defaults and a corresponding `map` variable that can be used to pass the different values to the resource
 
-For example, to modify the default values for the `azurerm_function_app.app` object, create a `terraform.tfvars` file and set the following values:
+For example, to modify the default runtime stack of the `azurerm_function_app.app` object to `powershell`, create a `terraform.tfvars` file and set the following values:
 
 ```json
 function_app_spec = {
   runtime_stack = "powershell"
-}
-
-service_plan_spec = {
-  tier = "Standard"
-  size = "S1"
-  capacity = "3"
 }
 ```
 
