@@ -29,6 +29,13 @@ variable "function_app_spec" {
   default     = {}
 }
 
+variable "application_insights_spec" {
+  description = "map of key-values for the application insights object"
+  type        = "map"
+  default     = {}
+}
+
+
 /*variable "service_plan_kind" {
   description = "The kind of the App Service Plan to create. Possible values are Windows (also available as App), Linux and FunctionApp (for a Consumption Plan). Defaults to Windows. Changing this forces a new resource to be created"
 }
