@@ -33,4 +33,4 @@ variable "application_insights_spec" {
   description = "map of key-values for the application insights object. See main.tf for valid keys"
   type        = "map"
   default     = {}
-}sa
+}
